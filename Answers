@@ -1,0 +1,37 @@
+Answer 1
+#include <bits/stdc++.h>
+using namespace std;
+
+{
+    // Stores sum of alternate sign
+    // of first N natural numbers
+    int alternateSum = 0;
+     
+    for (int i = 1; i <= N; i++) {
+ 
+        // If is an even number
+        if (i % 2 == 0) {
+ 
+            // Update alternateSum
+            alternateSum += -i;
+        }
+ 
+        // If i is an odd number
+        else {
+ 
+            // Update alternateSum
+            alternateSum += i;
+        }
+    }
+    return alternateSum;
+     
+}
+
+int main()
+{
+ 
+    int N, zerostore;
+    cin>>N>>zerostore; 
+    cout<<alternatingSumOfFirst_N(N);
+    return 0;
+}
